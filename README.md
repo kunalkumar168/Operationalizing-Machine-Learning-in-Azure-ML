@@ -41,6 +41,24 @@ TODO: Provide an architectual diagram of the project and give an introduction of
 ![swagger3](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/swagger3.PNG)
 ![swagger4](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/swagger4.PNG)
 
+#### Modify the scoring uri and key to match the deployed service generated and execute the endpoint.py file with python. You can then benchmark the endpoint using Apache benchmark to run against the HTTP API using authentication keys to retrieve performance.
+
+![endpoint](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/endpoint.PNG)
+![benchmark](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/benchmark1.PNG)
+![benchmark2](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/benchmark2.PNG)
+
+#### Create a Pipeline.
+
+You will use the Jupyter Notebook provided in the starter files. You must make sure to update the notebook to have the same keys, URI, dataset, cluster, and model names already created.
+
+![create](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/pipeline%20has%20been%20created.PNG)
+
+#### Publish a pipeline.
+
+![create](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20endpoint.PNG)
+
+#### Consume a pipeline.
+![pipelines](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20pipelines.PNG)
 
 ## Screen Recording 
 Link to the screen recording is https://youtu.be/tZX-4e9Np5E
