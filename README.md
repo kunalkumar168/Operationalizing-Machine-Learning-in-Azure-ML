@@ -1,4 +1,4 @@
-## Operationalizing Machine Learning
+# Operationalizing Machine Learning
 
 ## Project overview
 
@@ -53,14 +53,17 @@ You will use the Jupyter Notebook provided in the starter files. You must make s
 
 ![create](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/pipeline%20has%20been%20created.PNG)
 
-#### Publish a pipeline.
+#### Publish a pipeline using the pipeline_run object that is created.
 
 ![create](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20endpoint.PNG)
 
-#### Consume a pipeline.
+#### Consume a pipeline using the post request that will help trigger the pipeline, it also shows you how to monitor the status of the pipeline run using RunDetails Widget.
+
 ![pipelines](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20pipelines.PNG)
 
 ## Screen Recording 
+
 Link to the screen recording is https://youtu.be/tZX-4e9Np5E
 ## Standout Suggestions
-TODO (Optional): This is where you can provide information about any standout suggestions that you have attempted.
+
+The use of ParallelRunSteps can help in creating an Azure Machine Learning Pipeline step to process large amounts of data asynchronously and in parallel. It simplifies scaling up and out large machine learning workloads so data scientists and engineers can spend less time developing computer programs and focus on business objectives. It is a resilient and highly available solution. While the system manages the strategy, you also have the control of when to timeout your job, how many times to retry and how many errors to tolerant. ParallelRunStep is flexibly designed for a variety of workloads. It’s not just for batch inference, but also other workloads which necessitate parallel processing, for example, training many models concurrently, or processing large amount of data.
