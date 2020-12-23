@@ -6,10 +6,17 @@ In this project, I will use Azure to configure a cloud-based machine learning pr
 
 I will be working with the Bank Marketing dataset, it is related with direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe a term deposit (y). It consists of 20 input variables (columns) and 32,950 rows with 3,692 positive classes and 29,258 negative classes. I will use AutoML to train a model, then deploy the model as a REST endpoint, and test that it's working.
 
+The bank marketing dataset used in this project can be found in the link below:
+https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
+
 ## Architectural Diagram
-TODO: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model".
+
+![archi](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/project%202.png)
+
+The diagram above shows the workflow of operationalizing machine learning starting from the creation of an experiment using Automated ML, deployment of the best performing model after the completion of the experiment, enabling Application Insights and retrieving logs, consuming the deployed model using Swagger and lastly, consuming the deployed model endpoints by using the endpoint.py script provided to interact with the trained model.
 
 ## Key Steps
+
 #### Firstly, upload the bank marketing datasets to the azure machine learning studio, so that it becomes a readily available registered dataset for use.
 
 ![dataset](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/Registered%20dataset.PNG)
