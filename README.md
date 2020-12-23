@@ -20,11 +20,29 @@ Next, create an experiment using Automated ML, configure a compute cluster with 
 
 We'll in turn get our best performing model to be VotingEnsemble with an AUC_weighted score of 0.94687.
 
-
 ![bestmodel](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/best%20model%20(2).PNG)
 
-## Screen Recording
-TODO Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+Besides the VotingEnsemble model, we have other models that were generated during the iteration procees.
 
+![other models](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/best%20model.PNG)
+
+Next, deploy the Best Model(VotingEnsemble) to allow the interaction with the HTTP API service and interact with the model by sending data over POST requests. After enabling authentication, deploy the model using the Azure Container Instance(ACI).
+
+![deploy](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/deploy%20healthy.PNG)
+
+Enable Application Insights is the next step, we'll add: service.update(enable_app_insights=True) to the logs.py file to enable logging.
+
+![logs](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/app%20insights%20enabled.PNG)
+
+Next, we're going to make use of localhost on port 9000 to display the Swagger page while ensuring that the updated port is used when trying to reach the swagger instance by localhost, for example localhost:9000
+
+![swagger1](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/swagger1.PNG)
+![swagger2](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/swagger2.PNG)
+![swagger3](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/swagger3.PNG)
+![swagger4](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/swagger4.PNG)
+
+
+## Screen Recording 
+Link to the screen recording is https://youtu.be/tZX-4e9Np5E
 ## Standout Suggestions
 TODO (Optional): This is where you can provide information about any standout suggestions that you have attempted.
