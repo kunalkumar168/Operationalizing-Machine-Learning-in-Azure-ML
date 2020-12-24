@@ -67,6 +67,8 @@ You will use the Jupyter Notebook provided in the starter files. You must make s
 #### Consume a pipeline using the post request that will help trigger the pipeline, it also shows you how to monitor the status of the pipeline run using RunDetails Widget.
 
 ![pipelines](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20pipelines.PNG)
+![pipelines](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20pipeline%20overview.PNG)
+![pipelines](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20endpoint.PNG)
 
 ## Screen Recording 
 
