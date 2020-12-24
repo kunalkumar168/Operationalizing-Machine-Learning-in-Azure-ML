@@ -33,15 +33,23 @@ The diagram above shows the workflow of operationalizing machine learning starti
 
 ![other models](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/best%20model.PNG)
 
-#### Next, deploy the Best Model(VotingEnsemble) to allow the interaction with the HTTP API service and interact with the model by sending data over POST requests. After enabling authentication, deploy the model using the Azure Container Instance(ACI).
+#### Next, deploy the Best Model(VotingEnsemble).
+
+Go to the Automated ML section and find the recent experiment with a completed status. Click on it. Go to the "Model" tab and select the votingensemble model from the list and click it. Above it, a triangle button (or Play button) will show with the "Deploy" word. Click on it. Then fill out the form with a meaningful name and description. For Compute Type use Azure Container Instance (ACI) and Enable Authentication. Do not change anything in the Advanced section. Then deploy. Deployment takes a few seconds. After a successful deployment, a green checkmark will appear on the "Run" tab and the "Deploy status" will show as succeed.
 
 ![deploy](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/deploy%20healthy.PNG)
 
-#### Enable Application Insights is the next step, we'll add: service.update(enable_app_insights=True) to the logs.py file to enable logging.
+#### Enable Application Insights.
+
+Download the config.json file from the top left menu in the Azure portal. Put this file in the same directory of other files needed for this project. Find the previously deployed model to verify its name. It is needed in the SDK to select it for enabling logging. In this example, exercise-deployment-1 is the name of the service. This information is available from the Endpoints section.
+To enable application insights, we'll add: service.update(enable_app_insights=True) to the logs.py file to enable logging.
 
 ![logs](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/app%20insights%20enabled.PNG)
 
-#### Next, we're going to make use of localhost on port 9000 to display the Swagger page while ensuring that the updated port is used when trying to reach the swagger instance by localhost, for example localhost:9000
+#### Swagger documentation
+
+Ensure that Docker is installed on your computer. Azure provides a Swagger JSON file for deployed models, so head to the Endpoints section, and find your deployed model there. Click on the name of the model, and details will open that contains a Swagger URI section. Download the file locally to your computer and put it in the same directory with serve.py and swagger.sh. Serve.py will start a Python server on port 8000. This script needs to be right next to the downloaded swagger.json file. NOTE: this will not work if swagger.json is not on the same directory. 
+Since I didn't have permissions for port 80 on my computer, I updated the script to a higher number of 9000. I made use of localhost on port 9000 to display the Swagger page while ensuring that the updated port is used when trying to reach the swagger instance by localhost, for example localhost:9000/swagger.json
 
 ![swagger1](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/swagger1.PNG)
 ![swagger2](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/swagger2.PNG)
