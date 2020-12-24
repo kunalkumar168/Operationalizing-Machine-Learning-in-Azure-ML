@@ -56,15 +56,27 @@ The diagram above shows the workflow of operationalizing machine learning starti
 
 #### Create a Pipeline.
 
+
+
 You will use the Jupyter Notebook provided in the starter files. You must make sure to update the notebook to have the same keys, URI, dataset, cluster, and model names already created.
 
 ![create](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/pipeline%20has%20been%20created.PNG)
 
-#### Publish a pipeline using the pipeline_run object that is created.
+#### Publish a pipeline either in the ML studio or with the Python SDK.
+
+ML Studio.
+In Azure ML Studio, under the Pipelines section, you will get to a list of all the pipelines available. Click on a Run ID that has a status of Completed. Click on the Publish button so that the overlay menu shows up, and fill it with something descriptive. You can either re-use an endpoint, or create a new one.
+
+Python SDK
+Create experiment and pipeline_run
+The experiment and run_id of that experiment are crucial. Update the experiment name, project_folder:
+
 
 ![create](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20endpoint.PNG)
 
-#### Consume a pipeline using the post request that will help trigger the pipeline, it also shows you how to monitor the status of the pipeline run using RunDetails Widget.
+#### Consume a pipeline.
+Once the pipeline is published, you can authenticate. Next, the published pipeline will be used to retrieve the endpoint. This endpoint is the URI that the SDK will use to communicate with it over HTTP. Once the Jupyter Notebook completes all of its steps, the Pipeline will be triggered and available in Azure ML Studio.
+
 
 ![pipelines](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20pipelines.PNG)
 ![pipelines](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20pipeline%20overview.PNG)
