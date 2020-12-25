@@ -23,6 +23,7 @@ The diagram above shows the workflow of operationalizing machine learning starti
 
 #### Next, create an experiment using Automated ML, configure a compute cluster with vm_size of 'STANDARD_DS12_V2, and use that cluster to run the experiment.
 
+![automl_module](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/automl_module.PNG)
 ![automl](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/experiment%20shown%20as%20completed.PNG)
 
 #### Get the best performing model to be VotingEnsemble with an AUC_weighted score of 0.94687.
@@ -44,6 +45,10 @@ Go to the Automated ML section and find the recent experiment with a completed s
 Download the config.json file from the top left menu in the Azure portal. Put this file in the same directory of other files needed for this project. Find the previously deployed model to verify its name. It is needed in the SDK to select it for enabling logging. In this example, exercise-deployment-1 is the name of the service. This information is available from the Endpoints section.
 To enable application insights, we'll add: service.update(enable_app_insights=True) to the logs.py file to enable logging.
 
+![logs](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/log1.PNG)
+![logs](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/log2.PNG)
+![logs](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/log3.PNG)
+![logs](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/log4.PNG)
 ![logs](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/app%20insights%20enabled.PNG)
 
 #### Swagger documentation
@@ -73,6 +78,7 @@ In the provided started code, there is a benchmark.sh script with a call to ab.
 Open up the Jupyter Notebook and make sure you replace all of the URIs, Keys, and experiment names to match your own. Anywhere noted, ensure that the right components are replaced as shown in the next screenshot. Run the Jupyter Notebook all the way up until the Examine Results section. In the end, the pipeline should be available in Azure ML Studio in the Pipelines section. Clicking on the Pipeline should take you to the experiment that demonstrates the graph using the Bankmarketing Dataset and the Auto ML Model. You can choose to keep running through the cells in the Examine Results section to retrieve metrics and the best model.
 
 ![create](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/pipeline%20has%20been%20created.PNG)
+![completed](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/experiment%20completed.PNG)
 
 #### Publish a pipeline either in the ML studio or with the Python SDK.
 
