@@ -99,9 +99,6 @@ Once the pipeline is published, you can authenticate. Next, the published pipeli
 ![pipelines](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/pipeline%20endpoint%20active.PNG)
 ![pipelines](https://github.com/OREJAH/nd00333_AZMLND_C2/blob/master/starter_files/published%20endpoint.PNG)
 
-## Screen Recording 
-
-Link to the screen recording is https://youtu.be/oCkMY3Axhsw
 ## Standout Suggestions
 
 The use of ParallelRunSteps can help in creating an Azure Machine Learning Pipeline step to process large amounts of data asynchronously and in parallel. It simplifies scaling up and out large machine learning workloads so data scientists and engineers can spend less time developing computer programs and focus on business objectives. It is a resilient and highly available solution. While the system manages the strategy, you also have the control of when to timeout your job, how many times to retry and how many errors to tolerant. ParallelRunStep is flexibly designed for a variety of workloads. It’s not just for batch inference, but also other workloads which necessitate parallel processing, for example, training many models concurrently, or processing large amount of data.
